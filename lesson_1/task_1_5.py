@@ -13,8 +13,8 @@ def ping_resourse(list):
         print(type(line.decode('cp866')))
 
 
-my_vars = ['ping', 'yandex.ru']
+my_vars = ['ping', '-c 3', 'yandex.ru']
 ping_resourse(my_vars)
 
-my_vars = ['ping', 'youtube.com']
+my_vars = ['ping', '-c 3', 'youtube.com']
 ping_resourse(my_vars)
