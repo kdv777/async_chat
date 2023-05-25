@@ -1,9 +1,0 @@
-persons:
-- ivanov
-- petrov
-- orlov
-num_of_persons: 3
-persons_salary:
-  ivanov: 500€
-  petrov: 600€
-  orlov: 700€
