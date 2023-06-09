@@ -1,7 +1,7 @@
 """Утилиты"""
 
-import json
 import sys
+import json
 from common.variables import MAX_PACKAGE_LENGTH, ENCODING
 from errors import IncorrectDataRecivedError, NonDictInputError
 from decos import log
@@ -11,7 +11,7 @@ sys.path.append('../')
 @log
 def get_message(client):
     """
-    Утилита приёма и декодирования сообщенияпринимает байты выдаёт словарь,
+    Утилита приёма и декодирования сообщения принимает байты выдаёт словарь,
     если приняточто-то другое отдаёт ошибку значения
     :param client:
     :return:
@@ -22,8 +22,10 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
+        else:
+            raise IncorrectDataRecivedError
+    else:
         raise IncorrectDataRecivedError
-    raise IncorrectDataRecivedError
 
 
 @log
