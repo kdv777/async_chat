@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/lesson_3/demo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_10/common" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
